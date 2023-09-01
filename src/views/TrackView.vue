@@ -91,8 +91,9 @@
                         inputmode="numeric"
                         length="10"
                         placeholder="0"
-                        v-model="code"
+                        v-model.number="code"
                         type="number"
+                        v-keyboard="{ allowedChars: '0123456789' }"
                         focused="false"
                         @finish="onFinish"
                       ></v-otp-input>
@@ -143,11 +144,12 @@
                         variant="solo"
                         length="10"
                         placeholder="0"
-                        v-model="code"
+                        v-model.number="code"
                         type="number"
                         inputmode="numeric"
                         focused="false"
                         @finish="onFinish"
+                        v-keyboard="{ allowedChars: '0123456789' }"
                       ></v-otp-input>
                     </div>
                   </div>
