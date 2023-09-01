@@ -22,7 +22,7 @@ const vuetify = createVuetify({
   components,
   directives
 })
-export default createVuetify({
+export default ({
   components: {
     VOtpInput,
   },
