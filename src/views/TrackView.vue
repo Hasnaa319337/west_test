@@ -424,7 +424,7 @@ export default {
 @media (max-width: 520px) {
   .otp input {
     margin: 5px;
-    width: 25px !important;
+    width: 27px !important;
     font-size: 22px !important;
   }
 }
@@ -443,7 +443,7 @@ export default {
 @media (max-width: 340px) {
   .otp input {
     margin: 3px;
-    width: 20px;
+    width: 22px;
     font-size: 14px;
   }
 }
