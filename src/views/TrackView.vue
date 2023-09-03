@@ -308,11 +308,11 @@ export default {
   font-size: 25px !important;
 }
 .otp input {
-  margin: 10px;
-  width: 40px;
+  
+  width: 22px;
   text-align: center;
   color: #000000cc;
-  border-bottom: 2px solid #000000cc;
+  border-bottom: 2px solid #c9c9c9;
   font-size: 22px;
   font-weight: 900;
   margin: 0 10px !important;
@@ -321,7 +321,7 @@ export default {
 
 
 .otp div {
-  margin: 7px 0 7px;
+  margin: 7px 6px 7px 0;
   padding: 0;
 }
 
@@ -409,6 +409,14 @@ export default {
     margin: 7px;
     width: 35px;
     font-size: 20px;
+
+    width: 20px;
+    text-align: center;
+    color: #000000cc;
+    border-bottom: 2px solid #c9c9c9;
+    font-size: 22px;
+    font-weight: 900;
+    margin: 0 10px !important;
   }
 
   .mtcn_link {
