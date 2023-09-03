@@ -432,7 +432,7 @@ export default {
 @media (max-width: 440px) {
   .otp input {
     margin: 3px !important;
-    width: 22px !important;
+    width: 25px !important;
     font-size:20px !important;
   }
   .mtcn_link a {
