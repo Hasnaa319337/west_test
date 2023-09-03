@@ -87,16 +87,18 @@
                     <!-- OTP -->
                     <div class="otp">
                       <v-otp-input
-                        variant="solo"
-                        inputmode="numeric"
-                        length="10"
-                        placeholder="0"
-                        v-model.number="code"
-                        type="number"
-                        v-keyboard="{ allowedChars: '0123456789' }"
-                        focused="false"
-                        @finish="onFinish"
-                      ></v-otp-input>
+                        ref="otpInput"
+                        input-classes="otp-input"
+                        separator=" "
+                        :num-inputs="9"
+                        :should-auto-focus="true"
+                        :is-input-num="true"
+                        :conditionalClass="['one', 'two', 'three', 'four']"
+                        :placeholder="['0', '0', '0', '0', '0', '0', '0', '0', '0']"
+                        @on-change="handleOnChange"
+                        v-model="code"
+                        @on-complete="handleOnComplete"
+                      />
                     </div>
                   </div>
                 </v-container>
@@ -141,16 +143,18 @@
                     <!-- OTP -->
                     <div class="otp">
                       <v-otp-input
-                        variant="solo"
-                        length="10"
-                        placeholder="0"
-                        v-model.number="code"
-                        type="number"
-                        inputmode="numeric"
-                        focused="false"
-                        @finish="onFinish"
-                        v-keyboard="{ allowedChars: '0123456789' }"
-                      ></v-otp-input>
+                        ref="otpInput"
+                        input-classes="otp-input"
+                        separator=" "
+                        :num-inputs="9"
+                        :should-auto-focus="true"
+                        :is-input-num="true"
+                        :conditionalClass="['one', 'two', 'three', 'four']"
+                        :placeholder="['0', '0', '0', '0', '0', '0', '0', '0', '0']"
+                        @on-change="handleOnChange"
+                        v-model="code"
+                        @on-complete="handleOnComplete"
+                      />
                     </div>
                   </div>
                 </v-container>
@@ -184,12 +188,14 @@ export default {
     return {
       tab: null,
       dialog: false,
-
       code: ''
     }
   },
 
   methods: {
+    handleOnComplete(e) {
+      this.code = e
+    },
     sendTrackNum() {
       if (this.code.length == 10) {
         localStorage.setItem('yourCode', this.code)
@@ -306,8 +312,9 @@ export default {
   width: 40px;
   text-align: center;
   color: #000000cc;
-
-  font-weight: 600;
+  border-bottom: 2px solid #000000cc;
+  font-size: 22px;
+  font-weight: 900;
   margin: 0 10px !important;
 }
 

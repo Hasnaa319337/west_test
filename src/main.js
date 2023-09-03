@@ -17,16 +17,17 @@ import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loader
-import { VOtpInput } from 'vuetify/labs/VOtpInput'
+// import { VOtpInput } from 'vuetify/labs/VOtpInput'
+
+//otp
+import VOtpInput from "vue3-otp-input";
+
+
 const vuetify = createVuetify({
   components,
   directives
 })
-export default ({
-  components: {
-    VOtpInput,
-  },
-})
+
 
 const app = createApp(App)
 
