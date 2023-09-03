@@ -318,10 +318,7 @@ export default {
   margin: 0 10px !important;
 }
 
-.otp input:focus {
-  border: none;
-  outline: none;
-}
+
 
 .otp div {
   margin: 7px 0 7px;
@@ -427,29 +424,26 @@ export default {
 @media (max-width: 520px) {
   .otp input {
     margin: 5px;
-    width: 30px;
-    font-size: 18px;
-    padding-bottom: 5px !important;
+    width: 25px !important;
+    font-size: 22px !important;
   }
 }
 
 @media (max-width: 440px) {
   .otp input {
-    margin: 3px;
-    width: 24px !important;
-    font-size: 22px !important;
-    font-weight: 100;
+    margin: 3px !important;
+    width: 22px !important;
+    font-size:20px !important;
   }
-
   .mtcn_link a {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 340px) {
   .otp input {
     margin: 3px;
-    width: 30px;
+    width: 20px;
     font-size: 14px;
   }
 }
