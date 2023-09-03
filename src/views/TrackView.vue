@@ -207,6 +207,10 @@ export default {
 </script>
 
 <style>
+
+
+
+
 .router-link-active {
   background-color: #000;
 }
@@ -407,7 +411,7 @@ export default {
 
   .otp input {
     margin: 7px;
-    width: 35px;
+    width: 33px;
     font-size: 20px;
 
     width: 20px;
@@ -432,7 +436,7 @@ export default {
 @media (max-width: 520px) {
   .otp input {
     margin: 5px;
-    width: 27px !important;
+    width: 25px !important;
     font-size: 22px !important;
   }
 }
@@ -440,7 +444,7 @@ export default {
 @media (max-width: 440px) {
   .otp input {
     margin: 3px !important;
-    width: 25px !important;
+    width: 23px !important;
     font-size:20px !important;
   }
   .mtcn_link a {
@@ -451,7 +455,7 @@ export default {
 @media (max-width: 340px) {
   .otp input {
     margin: 3px;
-    width: 22px;
+    width: 20px;
     font-size: 14px;
   }
 }
